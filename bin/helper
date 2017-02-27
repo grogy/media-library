@@ -1,0 +1,27 @@
+#!/bin/bash
+
+source bin/functions.sh
+
+
+if [ $# -eq 0 ]; then
+    renderCommands;
+    exit 0;
+fi
+
+
+case "$1" in
+    start)
+        start;
+        ;;
+
+    stop)
+        stop;
+        ;;
+
+    in)
+        goIntoContainer;
+        ;;
+
+    *)
+        echo "Sorry, I don't know want you want"
+esac
