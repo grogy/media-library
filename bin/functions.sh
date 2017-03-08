@@ -19,7 +19,7 @@ function renderCommands() {
 
 
 function start() {
-    docker-compose up -d --build;
+    docker-compose up --build;
     echo "== All done, happy coding. ==";
 }
 
