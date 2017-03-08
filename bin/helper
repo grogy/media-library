@@ -19,9 +19,12 @@ case "$1" in
         ;;
 
     in)
-        goIntoContainer;
+        goIntoContainerCurrentUser;
         ;;
 
+    indef)
+        goIntoContainerDefaultUser;
+        ;;
     *)
         echo "Sorry, I don't know want you want"
 esac
